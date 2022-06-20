@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "557394399958",
+    "project_id": "appcentrosalud",
+    "storage_bucket": "appcentrosalud.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:557394399958:android:33f67837a524ca7f4d6f77",
+        "android_client_info": {
+          "package_name": "com.example.appcentrosalud"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "557394399958-ahldm6m19a2sk1e5o10nkgo7e3n507q0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.appcentrosalud",
+            "certificate_hash": "f786e2d07bc46ed4c6f014ce1e7be0f4b9b9596d"
+          }
+        },
+        {
+          "client_id": "557394399958-6p139kdqbmt42sm38j0p73qmultapf97.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmhacOet0n75k-LxctZXbMdu-RapFTJa4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "557394399958-6p139kdqbmt42sm38j0p73qmultapf97.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
