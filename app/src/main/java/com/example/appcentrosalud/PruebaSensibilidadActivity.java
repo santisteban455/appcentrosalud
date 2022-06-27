@@ -86,13 +86,13 @@ public class PruebaSensibilidadActivity extends AppCompatActivity {
                     startActivity(new Intent(PruebaSensibilidadActivity.this,PanelActivity.class));
                     finish();
                 }else{
-                    Toast.makeText(PruebaSensibilidadActivity.this, "No se guardaron los datos del tratamiento anterior del paciente en la base de datos", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(PruebaSensibilidadActivity.this, "No se guardaron los datos del sensibilidad del paciente en la base de datos", Toast.LENGTH_SHORT).show();
 
                 }
             }
         });
 
-        Toast.makeText(PruebaSensibilidadActivity.this, "Tratamiento anterior del Paciente registrado correctamente", Toast.LENGTH_SHORT).show();
+        Toast.makeText(PruebaSensibilidadActivity.this, "Sensibilidad del Paciente registrado correctamente", Toast.LENGTH_SHORT).show();
 
     }
 
