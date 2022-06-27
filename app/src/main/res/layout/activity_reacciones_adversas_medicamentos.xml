@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReaccionesAdversasMedicamentosActivity"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/texssssst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:text="REACCIONES ADVERSAS A MEDICAMENTOS" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/lblFechaNotificacion"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Fecha Notificacion:" />
+
+        <EditText
+            android:id="@+id/txtFechaNotificacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            android:layout_margin="5dp"
+            android:hint="INGRESAR FECHA NOTIFICACION"
+            android:inputType="text|date"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Tipo RAM:" />
+
+        <EditText
+            android:id="@+id/txtTipoRAM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_margin="5dp"
+            android:hint="INGRESAR TIPO RAM"
+
+            />
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="Medicamento Sospechoso:" />
+
+        <EditText
+            android:id="@+id/txtMedicamentoSospechoso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_margin="5dp"
+            android:hint="INGRESAR MEDICAMENTO "
+
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/lblFechaInicio"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Fecha Inicio:" />
+
+        <EditText
+            android:id="@+id/txtFechaInicio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            android:layout_margin="8dp"
+            android:hint="INGRESAR FECHA INICIO"
+            android:inputType="text|date"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/lblFechaFinal"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Fecha Final:" />
+
+        <EditText
+            android:id="@+id/txtFechaFinal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            android:layout_margin="8dp"
+            android:hint="INGRESAR FECHA FINAL"
+            android:inputType="text|date"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Disposicion / Evolucion:" />
+
+        <EditText
+            android:id="@+id/txtDisposicionEvolucion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            android:layout_margin="6dp"
+            android:hint="INGRESAR DISPOSICION/EVOLUCION"
+
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Radiologia:" />
+
+        <EditText
+            android:id="@+id/txtRadiologia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            android:layout_margin="6dp"
+            android:hint="INGRESAR RADIOLOGIA"
+
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Conclusiones y Recomendaciones :" />
+
+        <EditText
+            android:id="@+id/txtConclusionesRecomendaciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_margin="2dp"
+            android:hint="INGRESAR CONCLUSIONES Y RECOMENDACIONES"
+
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="wrap_content"
+        android:backgroundTint="@color/browser_actions_text_color"
+        android:textColor="@color/white"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:text="REGISTRAR" />
+
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="wrap_content"
+        android:backgroundTint="@color/design_default_color_error"
+        android:textColor="@color/white"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:text="CANCELAR" />
+
+</LinearLayout>
