@@ -8,7 +8,6 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
@@ -17,9 +16,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -126,7 +123,7 @@ public class RegistrarPacienteActivity extends AppCompatActivity {
         btnVolver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(RegistrarPacienteActivity.this , MainActivity.class);
+                Intent intent = new Intent(RegistrarPacienteActivity.this , PanelActivity.class);
                 startActivity(intent);
                 finish();
             }
@@ -135,6 +132,9 @@ public class RegistrarPacienteActivity extends AppCompatActivity {
     }
 
     public void registrarusuario(){
+
+        String id = UUID.randomUUID().toString();
+
 
 
         Map<String,Object> map = new HashMap<>();
@@ -147,21 +147,25 @@ public class RegistrarPacienteActivity extends AppCompatActivity {
         map.put("fechaNacimiento", fechaNaci);
 
 
-        bdcentrosalud.child("pacientes").child(UUID.randomUUID().toString()).setValue(map).addOnCompleteListener(new OnCompleteListener<Void>() {
+        bdcentrosalud.child("pacientes").child(id).setValue(map).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task2) {
 
                 if(task2.isSuccessful()){
-                    startActivity(new Intent(RegistrarPacienteActivity.this, PanelActivity.class));
+                    Bundle extras = new Bundle();
+                    extras.putString("id", id);
+                    Intent i = new Intent(RegistrarPacienteActivity.this, TratamientoTuberculosisAnteriorActivity.class);
+                    i.putExtras(extras);
+                    startActivity(i);
                     finish();
                 }else{
-                    Toast.makeText(RegistrarPacienteActivity.this, "No se guardaron los datos del usuario en la base de datos", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RegistrarPacienteActivity.this, "No se guardaron los datos del paciente en la base de datos", Toast.LENGTH_SHORT).show();
 
                 }
             }
         });
 
-        Toast.makeText(RegistrarPacienteActivity.this, "Vehículo registrado correctamente", Toast.LENGTH_SHORT).show();
+        Toast.makeText(RegistrarPacienteActivity.this, "Paciente registrado correctamente", Toast.LENGTH_SHORT).show();
 
     }
 

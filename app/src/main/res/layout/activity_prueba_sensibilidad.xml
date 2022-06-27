@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegistrarPacienteActivity"
+    tools:context=".PruebaSensibilidadActivity"
     android:gravity="center"
     android:orientation="vertical">
 
@@ -16,7 +16,7 @@
         android:textStyle="bold"
         android:layout_marginBottom="20dp"
         android:textSize="25dp"
-        android:text="REGISTRAR PACIENTE" />
+        android:text="PRUEBA DE SENSIBILIDAD" />
 
 
     <LinearLayout
@@ -32,14 +32,14 @@
             android:textStyle="bold"
             android:layout_margin="10dp"
             android:textSize="18dp"
-            android:text="NOMBRES:" />
+            android:text="LABORATORIO:" />
 
         <EditText
-            android:id="@+id/txtNombre"
+            android:id="@+id/txtLaboratorio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:hint="INGRESAR NOMBRES"
+            android:hint="INGRESAR LAB."
             android:ems="10"
             />
 
@@ -61,15 +61,15 @@
             android:textStyle="bold"
             android:gravity="center"
             android:layout_height="wrap_content"
-            android:text="APELLIDO P:" />
+            android:text="CÓDIGO:" />
 
         <EditText
-            android:id="@+id/txtApellidoPaterno"
+            android:id="@+id/txtCodigo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:ems="10"
-            android:hint="INGRESAR A. PATERNO"
+            android:hint="INGRESAR CÓDIGO"
             />
 
 
@@ -90,15 +90,15 @@
             android:textStyle="bold"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="APELLIDO M:" />
+            android:text="FECHA:" />
 
         <EditText
-            android:id="@+id/txtApellidoMaterno"
+                android:id="@+id/txtFecha"
             android:layout_width="wrap_content"
             android:layout_margin="5dp"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="INGRESAR A. MATERNO"
+            android:hint="INGRESAR FECHA"
             />
 
 
@@ -106,40 +106,12 @@
     </LinearLayout>
 
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
 
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="wrap_content"
-            android:gravity="center"
-            android:textSize="18dp"
-            android:layout_margin="10dp"
-            android:textStyle="bold"
-            android:layout_height="wrap_content"
-            android:text="CELULAR" />
-
-        <EditText
-            android:id="@+id/txtCelular"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:layout_margin="10dp"
-            android:hint="INGRESAR CELULAR"
-            android:inputType="phone"
-            />
-
-
-
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         >
 
         <TextView
@@ -148,85 +120,21 @@
             android:layout_width="wrap_content"
             android:layout_margin="10dp"
             android:textStyle="bold"
+            android:layout_gravity="center"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="DIRECCIÓN" />
+            android:text="MEDICAMENTOS" />
 
         <EditText
-            android:id="@+id/txtDireccion"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/txtMedicamentos"
+            android:layout_width="289dp"
+            android:layout_height="129dp"
             android:layout_margin="10dp"
-            android:hint="INGRESAR DIRECCIÓN"
+            android:hint="INGRESAR MEDICAMENTOS"
             android:ems="10"
             />
 
-
-
     </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
-
-        <TextView
-            android:id="@+id/textView8"
-            android:layout_width="wrap_content"
-            android:layout_margin="10dp"
-            android:textSize="18dp"
-            android:textStyle="bold"
-            android:layout_height="wrap_content"
-            android:text="CORREO" />
-
-        <EditText
-            android:id="@+id/txtCorreo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:gravity="center"
-            android:ems="10"
-            android:hint="INGRESAR CORREO"
-            android:inputType="textEmailAddress"
-
-            />
-
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
-
-        <TextView
-            android:id="@+id/lblFechaNaci"
-            android:layout_width="wrap_content"
-            android:textStyle="bold"
-            android:textSize="18dp"
-            android:layout_margin="10dp"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="FECHA NAC." />
-
-        <EditText
-            android:id="@+id/txtFechaNaci"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:layout_margin="10dp"
-            android:hint="INGRESAR FECHA"
-            android:inputType="text|date"
-            />
-
-
-
-    </LinearLayout>
-
-
 
     <Button
         android:id="@+id/btnRegistrar"

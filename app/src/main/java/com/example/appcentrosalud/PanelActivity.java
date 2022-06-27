@@ -78,8 +78,8 @@ public class PanelActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
 
                 if(snapshot.exists()){
-                    String nombre = snapshot.child("nombres").getValue().toString();
-                    String apellido = snapshot.child("apellidoPaterno").getValue().toString();
+                    String nombre = snapshot.child("nombre").getValue().toString();
+                    String apellido = snapshot.child("apellido").getValue().toString();
                     txtNombre.setText(nombre + " " + apellido);
 
                 }
