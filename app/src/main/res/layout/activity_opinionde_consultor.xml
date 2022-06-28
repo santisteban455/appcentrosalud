@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegistrarPacienteActivity"
+    tools:context=".OpiniondeConsultorActivity"
     android:gravity="center"
     android:orientation="vertical">
 
@@ -16,8 +16,65 @@
         android:textStyle="bold"
         android:layout_marginBottom="20dp"
         android:textSize="25dp"
-        android:text="REGISTRAR PACIENTE" />
+        android:text="OPINION DE CONSULTOR" />
 
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:textSize="18dp"
+            android:text="Direccion de Salud:" />
+
+        <EditText
+            android:id="@+id/txtDirecciondeSalud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:hint="Ingresar Direccion de Salud "
+            android:ems="15"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:textSize="18dp"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Red de Salud:" />
+
+        <EditText
+            android:id="@+id/txtRedSalud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:ems="10"
+            android:hint="Ingresar Red de Salud "
+            />
+
+
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -28,23 +85,21 @@
         <TextView
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:layout_margin="10dp"
             android:textSize="18dp"
-            android:text="NOMBRES:" />
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Microred:" />
 
         <EditText
-            android:id="@+id/txtNombre"
+            android:id="@+id/txtMicrored"
             android:layout_width="wrap_content"
+            android:layout_margin="5dp"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:hint="INGRESAR NOMBRES"
             android:ems="10"
+            android:hint="Ingresar Microred"
             />
-
-
-
     </LinearLayout>
 
     <LinearLayout
@@ -56,55 +111,22 @@
         <TextView
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
-            android:textSize="18dp"
-            android:layout_margin="10dp"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:layout_height="wrap_content"
-            android:text="APELLIDO P:" />
-
-        <EditText
-            android:id="@+id/txtApellidoPaterno"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:ems="10"
-            android:hint="INGRESAR A. PATERNO"
-            />
-
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
-
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="wrap_content"
-            android:textSize="18dp"
+            android:textSize="15dp"
             android:layout_margin="10dp"
             android:textStyle="bold"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="APELLIDO M:" />
+            android:text="Establecimiento de Salud :" />
 
         <EditText
-            android:id="@+id/txtApellidoMaterno"
+            android:id="@+id/txtEstablecimientoSalud"
             android:layout_width="wrap_content"
             android:layout_margin="5dp"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="INGRESAR A. MATERNO"
+            android:ems="15"
+            android:hint="Ingresar Establecimiento Salud"
             />
-
-
-
     </LinearLayout>
-
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -112,55 +134,124 @@
         android:orientation="horizontal"
         >
 
-        <TextView
-            android:id="@+id/textView6"
+       <TextView
+            android:id="@+id/textView5"
             android:layout_width="wrap_content"
-            android:gravity="center"
-            android:textSize="18dp"
+            android:textSize="15dp"
             android:layout_margin="10dp"
             android:textStyle="bold"
             android:layout_height="wrap_content"
-            android:text="CELULAR" />
+            android:gravity="center"
+            android:text="Medico Tratante:" />
 
         <EditText
-            android:id="@+id/txtCelular"
+            android:id="@+id/txtMedicoTratante"
             android:layout_width="wrap_content"
+            android:layout_margin="5dp"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:layout_margin="10dp"
-            android:hint="INGRESAR CELULAR"
-            android:inputType="phone"
+            android:ems="15"
+            android:hint="Ingresar Medico Tratante"
             />
     </LinearLayout>
-
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         >
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:textSize="15dp"
+        android:text="Localizacion de emfermedad:"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="ve"
+        >
+
         <TextView
             android:id="@+id/textView7"
-            android:textSize="18dp"
             android:layout_width="wrap_content"
-            android:layout_margin="10dp"
-            android:textStyle="bold"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="DIRECCIÓN" />
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:textSize="15dp"
+            android:text="Otros:"/>
 
         <EditText
-            android:id="@+id/txtDireccion"
+            android:id="@+id/txtOtros"
             android:layout_width="wrap_content"
+            android:layout_margin="5dp"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:hint="INGRESAR DIRECCIÓN"
-            android:ems="10"
+            android:ems="15"
+            android:hint="Ingresar otros Datos"
             />
-
 
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/lblFechaInicioTrat"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:textSize="10dp"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Fecha Inicio Tratamiento:" />
+
+        <EditText
+            android:id="@+id/txtFechaInicioTratamiento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_margin="7dp"
+            android:hint="Ingresar fecha inicio Trat"
+            android:inputType="text|date"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/lblFechaFinTrat"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:textSize="10dp"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Fecha Fin Tratamiento:" />
+
+        <EditText
+            android:id="@+id/txtFechaFinTratamiento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_margin="7dp"
+            android:hint="Ingresar fecha fin Trat"
+            android:inputType="text|date"
+            />
+
+    </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -170,60 +261,23 @@
         <TextView
             android:id="@+id/textView8"
             android:layout_width="wrap_content"
-            android:layout_margin="10dp"
-            android:textSize="18dp"
             android:textStyle="bold"
-            android:layout_height="wrap_content"
-            android:text="CORREO" />
-
-        <EditText
-            android:id="@+id/txtCorreo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:gravity="center"
-            android:ems="10"
-            android:hint="INGRESAR CORREO"
-            android:inputType="textEmailAddress"
-
-            />
-
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
-
-        <TextView
-            android:id="@+id/lblFechaNaci"
-            android:layout_width="wrap_content"
-            android:textStyle="bold"
-            android:textSize="18dp"
+            android:textSize="10dp"
             android:layout_margin="10dp"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="FECHA NAC." />
+            android:text="Lugar y Fecha:" />
 
         <EditText
-            android:id="@+id/txtFechaNaci"
+            android:id="@+id/txtLugaryFecha"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:layout_margin="10dp"
-            android:hint="INGRESAR FECHA"
-            android:inputType="text|date"
+            android:layout_margin="7dp"
+            android:hint="Lugar y Fecha"
+
             />
-
-
-
     </LinearLayout>
-
-
-
     <Button
         android:id="@+id/btnRegistrar"
         android:layout_width="wrap_content"
@@ -243,3 +297,9 @@
         android:text="CANCELAR" />
 
 </LinearLayout>
+
+
+
+
+
+
