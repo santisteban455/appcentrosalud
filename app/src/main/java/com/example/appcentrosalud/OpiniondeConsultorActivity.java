@@ -94,7 +94,7 @@ public class OpiniondeConsultorActivity extends AppCompatActivity {
 
                     Bundle extras = new Bundle();
                     extras.putString("id", valor);
-                    Intent i = new Intent(OpiniondeConsultorActivity.this, PanelActivity.class);
+                    Intent i = new Intent(OpiniondeConsultorActivity.this, CondicionIngresoActivity.class);
                     i.putExtras(extras);
                     startActivity(i);
                     finish();

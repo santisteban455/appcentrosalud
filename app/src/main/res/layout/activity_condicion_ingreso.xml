@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegistrarPacienteActivity"
+    tools:context=".CondicionIngresoActivity"
     android:gravity="center"
     android:orientation="vertical">
 
@@ -16,7 +16,7 @@
         android:textStyle="bold"
         android:layout_marginBottom="20dp"
         android:textSize="25dp"
-        android:text="OPINION DE CONSULTOR" />
+        android:text="CONDICION DE INGRESO" />
 
 
     <LinearLayout
