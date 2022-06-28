@@ -14,6 +14,12 @@
         android:theme="@style/Theme.Appcentrosalud"
         tools:targetApi="31">
         <activity
+            android:name=".RegistroAsistenciaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CondicionIngresoActivity"
+            android:exported="false" />
+        <activity
             android:name=".OpiniondeConsultorActivity"
             android:exported="false" />
         <activity
