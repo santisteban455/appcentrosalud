@@ -41,9 +41,6 @@
             android:name=".TratamientoTuberculosisAnteriorActivity"
             android:exported="false" />
         <activity
-            android:name=".RegistrarControlActivity"
-            android:exported="false" />
-        <activity
             android:name=".RegistrarPacienteActivity"
             android:exported="false" />
         <activity

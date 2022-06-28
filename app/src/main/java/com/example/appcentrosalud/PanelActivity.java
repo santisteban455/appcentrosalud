@@ -56,16 +56,7 @@ public class PanelActivity extends AppCompatActivity {
             }
         });
 
-        btnControl.setOnClickListener(new View.OnClickListener() {
-            @Override
 
-            public void onClick(View view) {
-
-                Intent intent = new Intent(PanelActivity.this , RegistrarControlActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        });
 
     }
 
@@ -79,7 +70,7 @@ public class PanelActivity extends AppCompatActivity {
 
                 if(snapshot.exists()){
                     String nombre = snapshot.child("nombre").getValue().toString();
-                    String apellido = snapshot.child("apellido").getValue().toString();
+                    String apellido = snapshot.child("apellidos").getValue().toString();
                     txtNombre.setText(nombre + " " + apellido);
 
                 }

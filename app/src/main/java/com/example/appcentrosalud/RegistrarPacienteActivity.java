@@ -32,6 +32,7 @@ public class RegistrarPacienteActivity extends AppCompatActivity {
     EditText txtNombres, txtApellidoPaterno, txtApellidoMaterno, txtCelular,txtDireccion,txtCorreo, txtFechaNaci;
     Button btnRegistrar, btnVolver;
     String  nombres, apellidoPaterno, apellidoMaterno, celular, direccion, correo, fechaNaci;
+
     DatePickerDialog.OnDateSetListener setListener;
 
     FirebaseAuth auth;
