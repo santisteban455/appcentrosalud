@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".TratamientoTuberculosisAnteriorActivity"
     android:gravity="center"
+    android:background="@drawable/pixel2"
     android:orientation="vertical">
 
     <TextView
@@ -16,6 +17,8 @@
         android:textStyle="bold"
         android:layout_marginBottom="20dp"
         android:textSize="25dp"
+        android:textColor="#050505"
+        android:background="#00aae4"
         android:text="TRATAMIENTO ANTERIOR" />
 
 
@@ -32,13 +35,14 @@
             android:textStyle="bold"
             android:layout_margin="10dp"
             android:textSize="18dp"
+            android:textColor="#050505"
             android:text="LUGAR:" />
 
         <EditText
             android:id="@+id/txtLugar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_margin="8dp"
             android:hint="INGRESAR LUGAR"
             android:ems="10"
             />
@@ -61,6 +65,7 @@
             android:textStyle="bold"
             android:gravity="center"
             android:layout_height="wrap_content"
+            android:textColor="#050505"
             android:text="AÑO:" />
 
         <EditText
@@ -90,12 +95,13 @@
             android:textStyle="bold"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:textColor="#050505"
             android:text="ESQUEMA:" />
 
         <EditText
             android:id="@+id/txtEsquema"
             android:layout_width="wrap_content"
-            android:layout_margin="5dp"
+            android:layout_margin="8dp"
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="INGRESAR ESQUEMA"
@@ -120,6 +126,7 @@
             android:layout_margin="10dp"
             android:textStyle="bold"
             android:layout_height="wrap_content"
+            android:textColor="#050505"
             android:text="EVOLUCIÓN:" />
 
         <EditText
@@ -151,6 +158,8 @@
             android:layout_gravity="center"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:background="#00aae4"
+            android:textColor="#050505"
             android:text="CONDICIÓN INGRESO" />
 
         <EditText
@@ -167,7 +176,7 @@
     <Button
         android:id="@+id/btnRegistrarTTA"
         android:layout_width="wrap_content"
-        android:backgroundTint="@color/browser_actions_text_color"
+        android:backgroundTint="#008000"
         android:textColor="@color/white"
         android:layout_marginTop="5dp"
         android:layout_height="wrap_content"

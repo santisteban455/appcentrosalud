@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CondicionActualActivity"
+    android:background="@drawable/pixel2"
     android:gravity="center"
     android:orientation="vertical">
 
@@ -17,6 +18,8 @@
         android:textStyle="bold"
         android:layout_marginBottom="20dp"
         android:textSize="25dp"
+        android:textColor="#050505"
+        android:background="#00aae4"
         android:text="CONDICION ACTUAL" />
 
 
@@ -33,6 +36,7 @@
             android:textStyle="bold"
             android:layout_margin="10dp"
             android:textSize="18dp"
+            android:textColor="#050505"
             android:text="FIEBRE:" />
 
         <EditText
@@ -61,6 +65,7 @@
             android:layout_margin="10dp"
             android:textStyle="bold"
             android:gravity="center"
+            android:textColor="#050505"
             android:layout_height="wrap_content"
             android:text="PERD. PESO:" />
 
@@ -70,7 +75,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:ems="10"
-            android:hint="INGRESAR PERD. PESO"
+            android:hint="INGRESAR SI/NO"
             />
 
 
@@ -91,6 +96,7 @@
             android:textStyle="bold"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:textColor="#050505"
             android:text="PESO:" />
 
         <EditText
@@ -109,7 +115,7 @@
     <LinearLayout
         android:layout_width="308dp"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="horizontal">
 
         <TextView
             android:id="@+id/textView10"
@@ -117,17 +123,19 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:gravity="center"
+            android:textColor="#050505"
             android:text="DIFICULTAD RESPIRATORIA:"
-            android:textSize="18dp"
+            android:textSize="13dp"
             android:textStyle="bold" />
 
         <EditText
             android:id="@+id/txtDificultadRes"
-            android:layout_width="253dp"
+            android:layout_width="wrap_content"
+            android:layout_margin="7dp"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:ems="10"
-            android:hint="INGRESAR DIFICULTAD RESPIRATORIA" />
+            android:ems="50"
+            android:hint="INGRESAR SI/NO"
+            />
 
 
     </LinearLayout>
@@ -149,6 +157,7 @@
             android:layout_gravity="center"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:textColor="#050505"
             android:text="OTROS" />
 
         <EditText
@@ -156,7 +165,7 @@
             android:layout_width="289dp"
             android:layout_height="129dp"
             android:layout_margin="10dp"
-            android:hint="INGRESAR MEDICAMENTOS"
+            android:hint="INGRESAR OTROS"
             android:ems="10"
             />
 
@@ -165,7 +174,7 @@
     <Button
         android:id="@+id/btnRegistrar"
         android:layout_width="wrap_content"
-        android:backgroundTint="@color/browser_actions_text_color"
+        android:backgroundTint="#008000"
         android:textColor="@color/white"
         android:layout_marginTop="5dp"
         android:layout_height="wrap_content"

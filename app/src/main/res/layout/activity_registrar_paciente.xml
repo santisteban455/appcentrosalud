@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".RegistrarPacienteActivity"
     android:gravity="center"
+    android:background="@drawable/pixel2"
     android:orientation="vertical">
 
     <TextView
@@ -16,6 +17,9 @@
         android:textStyle="bold"
         android:layout_marginBottom="20dp"
         android:textSize="25dp"
+        android:textColor="#050505"
+        android:background="#00aae4"
+        android:fontFamily="sans-serif-black"
         android:text="REGISTRAR PACIENTE" />
 
 
@@ -32,6 +36,7 @@
             android:textStyle="bold"
             android:layout_margin="10dp"
             android:textSize="18dp"
+            android:textColor="#050505"
             android:text="NOMBRES:" />
 
         <EditText
@@ -60,6 +65,7 @@
             android:layout_margin="10dp"
             android:textStyle="bold"
             android:gravity="center"
+            android:textColor="#050505"
             android:layout_height="wrap_content"
             android:text="APELLIDO P:" />
 
@@ -90,6 +96,7 @@
             android:textStyle="bold"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:textColor="#050505"
             android:text="APELLIDO M:" />
 
         <EditText
@@ -119,8 +126,9 @@
             android:textSize="18dp"
             android:layout_margin="10dp"
             android:textStyle="bold"
+            android:textColor="#050505"
             android:layout_height="wrap_content"
-            android:text="CELULAR" />
+            android:text="CELULAR:" />
 
         <EditText
             android:id="@+id/txtCelular"
@@ -146,7 +154,8 @@
             android:textStyle="bold"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="DIRECCIÓN" />
+            android:textColor="#050505"
+            android:text="DIRECCIÓN:" />
 
         <EditText
             android:id="@+id/txtDireccion"
@@ -173,8 +182,9 @@
             android:layout_margin="10dp"
             android:textSize="18dp"
             android:textStyle="bold"
+            android:textColor="#050505"
             android:layout_height="wrap_content"
-            android:text="CORREO" />
+            android:text="CORREO:" />
 
         <EditText
             android:id="@+id/txtCorreo"
@@ -206,7 +216,8 @@
             android:layout_margin="10dp"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="FECHA NAC." />
+            android:textColor="#050505"
+            android:text="FECHA NAC:" />
 
         <EditText
             android:id="@+id/txtFechaNaci"
@@ -227,7 +238,7 @@
     <Button
         android:id="@+id/btnRegistrar"
         android:layout_width="wrap_content"
-        android:backgroundTint="@color/browser_actions_text_color"
+        android:backgroundTint="#008000"
         android:textColor="@color/white"
         android:layout_marginTop="5dp"
         android:layout_height="wrap_content"

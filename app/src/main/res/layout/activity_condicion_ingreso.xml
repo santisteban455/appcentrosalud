@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CondicionIngresoActivity"
+    android:background="@drawable/pixel2"
     android:gravity="center"
     android:orientation="vertical">
 
@@ -16,7 +17,9 @@
         android:textStyle="bold"
         android:layout_marginBottom="20dp"
         android:textSize="25dp"
-        android:text="CONDICION DE INGRESO" />
+        android:textColor="#050505"
+        android:background="#00aae4"
+        android:text="CONDICIÓN DE INGRESO " />
 
 
     <LinearLayout
@@ -32,14 +35,15 @@
             android:textStyle="bold"
             android:layout_margin="10dp"
             android:textSize="18dp"
-            android:text="Condicion de Ingreso:" />
+            android:textColor="#050505"
+            android:text=" Condición dePaciente: " />
 
         <EditText
             android:id="@+id/txtCondiciondeIngreso"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="6dp"
-            android:hint="Ingresar Condicion de Ingreso"
+            android:hint="Ingresar condición de ingreso de ingreso "
             android:ems="15"
             />
 
@@ -60,8 +64,9 @@
             android:layout_margin="10dp"
             android:textStyle="bold"
             android:gravity="center"
+            android:textColor="#050505"
             android:layout_height="wrap_content"
-            android:text="Diagnostico de Ingreso:" />
+            android:text="Diagnóstico de Ingreso:" />
 
         <EditText
             android:id="@+id/txtDiagnosticoIngreso"
@@ -69,7 +74,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="7dp"
             android:ems="15"
-            android:hint="Ingresar Diagnostico Ingreso"
+            android:hint="Ingresar Diagnóstico de Ingreso"
             />
 
 
@@ -90,6 +95,7 @@
             android:textStyle="bold"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:textColor="#050505"
             android:text="Esquema Indicado:" />
 
         <EditText
@@ -120,6 +126,7 @@
             android:layout_margin="10dp"
             android:textStyle="bold"
             android:layout_height="wrap_content"
+            android:textColor="#050505"
             android:text="Plan de Trabajo:" />
 
         <EditText
@@ -139,7 +146,7 @@
     <Button
         android:id="@+id/btnRegistrar"
         android:layout_width="wrap_content"
-        android:backgroundTint="@color/browser_actions_text_color"
+        android:backgroundTint="#008000"
         android:textColor="@color/white"
         android:layout_marginTop="5dp"
         android:layout_height="wrap_content"

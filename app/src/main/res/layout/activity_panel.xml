@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".PanelActivity"
     android:orientation="vertical"
+    android:background="@drawable/pixel5"
     android:gravity="center"
 
     >
@@ -18,7 +19,8 @@
         android:layout_gravity="center"
         android:textSize="22dp"
         android:gravity="center"
-        android:text="CENTRO DE SALUD" />
+        android:textColor="#050505"
+        android:text="CENTRO DE SALUD PACHACUTEC" />
 
 
 
@@ -33,7 +35,7 @@
             android:id="@+id/textView0"
             android:layout_width="wrap_content"
             android:layout_margin="10dp"
-
+            android:textColor="#050505"
             android:textSize="20dp"
             android:layout_height="wrap_content"
             android:text="NOMBRE: " />

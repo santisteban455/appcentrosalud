@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".OpiniondeConsultorActivity"
     android:gravity="center"
+    android:background="@drawable/pixel2"
     android:orientation="vertical">
 
     <TextView
@@ -15,6 +16,8 @@
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:layout_marginBottom="20dp"
+        android:textColor="#050505"
+        android:background="#00aae4"
         android:textSize="25dp"
         android:text="OPINION DE CONSULTOR" />
 
@@ -32,15 +35,16 @@
             android:textStyle="bold"
             android:layout_margin="10dp"
             android:textSize="18dp"
-            android:text="Direccion de Salud:" />
+            android:textColor="#050505"
+            android:text="Dirección de Salud:" />
 
         <EditText
             android:id="@+id/txtDirecciondeSalud"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:hint="Ingresar Direccion de Salud "
-            android:ems="15"
+            android:hint="Ingresar dirección"
+            android:ems="10"
             />
 
 
@@ -60,6 +64,7 @@
             android:layout_margin="10dp"
             android:textStyle="bold"
             android:gravity="center"
+            android:textColor="#050505"
             android:layout_height="wrap_content"
             android:text="Red de Salud:" />
 
@@ -90,6 +95,7 @@
             android:textStyle="bold"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:textColor="#050505"
             android:text="Microred:" />
 
         <EditText
@@ -111,11 +117,12 @@
         <TextView
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
-            android:textSize="15dp"
+            android:textSize="17dp"
             android:layout_margin="10dp"
             android:textStyle="bold"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:textColor="#050505"
             android:text="Establecimiento de Salud :" />
 
         <EditText
@@ -123,8 +130,8 @@
             android:layout_width="wrap_content"
             android:layout_margin="5dp"
             android:layout_height="wrap_content"
-            android:ems="15"
-            android:hint="Ingresar Establecimiento Salud"
+            android:ems="14"
+            android:hint="Ingresar Establecimiento"
             />
     </LinearLayout>
 
@@ -142,15 +149,16 @@
             android:textStyle="bold"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Medico Tratante:" />
+            android:textColor="#050505"
+            android:text="Médico Tratante:" />
 
         <EditText
             android:id="@+id/txtMedicoTratante"
             android:layout_width="wrap_content"
             android:layout_margin="5dp"
             android:layout_height="wrap_content"
-            android:ems="15"
-            android:hint="Ingresar Medico Tratante"
+            android:ems="10"
+            android:hint="Ingresar Médico "
             />
     </LinearLayout>
     <LinearLayout
@@ -166,7 +174,10 @@
         android:textStyle="bold"
         android:layout_margin="10dp"
         android:textSize="15dp"
+        android:textColor="#050505"
+        android:background="#00aae4"
         android:text="Localizacion de emfermedad:"/>
+
 
     </LinearLayout>
 
@@ -183,6 +194,7 @@
             android:textStyle="bold"
             android:layout_margin="10dp"
             android:textSize="15dp"
+            android:textColor="#050505"
             android:text="Otros:"/>
 
         <EditText
@@ -191,7 +203,7 @@
             android:layout_margin="5dp"
             android:layout_height="wrap_content"
             android:ems="15"
-            android:hint="Ingresar otros Datos"
+            android:hint="Ingresar Localización"
             />
 
 
@@ -207,10 +219,11 @@
             android:id="@+id/lblFechaInicioTrat"
             android:layout_width="wrap_content"
             android:textStyle="bold"
-            android:textSize="10dp"
+            android:textSize="15dp"
             android:layout_margin="10dp"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:textColor="#050505"
             android:text="Fecha Inicio Tratamiento:" />
 
         <EditText
@@ -219,7 +232,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:layout_margin="7dp"
-            android:hint="Ingresar fecha inicio Trat"
+            android:hint="Ingresar fecha "
             android:inputType="text|date"
             />
 
@@ -235,10 +248,11 @@
             android:id="@+id/lblFechaFinTrat"
             android:layout_width="wrap_content"
             android:textStyle="bold"
-            android:textSize="10dp"
+            android:textSize="15dp"
             android:layout_margin="10dp"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:textColor="#050505"
             android:text="Fecha Fin Tratamiento:" />
 
         <EditText
@@ -247,7 +261,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:layout_margin="7dp"
-            android:hint="Ingresar fecha fin Trat"
+            android:hint="Ingresar fecha fin"
             android:inputType="text|date"
             />
 
@@ -262,10 +276,11 @@
             android:id="@+id/textView8"
             android:layout_width="wrap_content"
             android:textStyle="bold"
-            android:textSize="10dp"
+            android:textSize="17dp"
             android:layout_margin="10dp"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:textColor="#050505"
             android:text="Lugar y Fecha:" />
 
         <EditText
@@ -274,7 +289,8 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:layout_margin="7dp"
-            android:hint="Lugar y Fecha"
+            android:hint="Ingresar Lugar y Fecha"
+
 
             />
     </LinearLayout>
@@ -286,7 +302,7 @@
     <Button
         android:id="@+id/btnRegistrar"
         android:layout_width="wrap_content"
-        android:backgroundTint="@color/browser_actions_text_color"
+        android:backgroundTint="#008000"
         android:textColor="@color/white"
         android:layout_marginTop="5dp"
         android:layout_height="wrap_content"
