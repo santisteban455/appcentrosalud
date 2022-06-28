@@ -17,7 +17,7 @@
             android:name=".ReaccionesAdversasMedicamentosActivity"
             android:exported="false" />
         <activity
-            android:name=".EsquemaPacienteActivity"
+            android:name=".EsquemaActualActivity"
             android:exported="false" />
         <activity
             android:name=".ExamenClinicoActivity"

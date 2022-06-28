@@ -234,7 +234,7 @@
             android:layout_margin="10dp"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Conclusiones y Recomendaciones :" />
+            android:text="Conclu./Recom.:" />
 
         <EditText
             android:id="@+id/txtConclusionesRecomendaciones"
@@ -242,11 +242,15 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:layout_margin="2dp"
-            android:hint="INGRESAR CONCLUSIONES Y RECOMENDACIONES"
+            android:hint="INGRESAR CONCL Y REC"
 
             />
     </LinearLayout>
-
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
     <Button
         android:id="@+id/btnRegistrar"
         android:layout_width="wrap_content"
@@ -264,5 +268,5 @@
         android:layout_marginTop="5dp"
         android:layout_height="wrap_content"
         android:text="CANCELAR" />
-
+    </LinearLayout>
 </LinearLayout>

@@ -3,18 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/hp/AndroidStudioProjects/appcentrosalud3/app/src/main/res/layout/activity_esquema_paciente.xml" value="0.5211505922165821" />
-        <entry key="..\:/Users/hp/AndroidStudioProjects/appcentrosalud3/app/src/main/res/layout/activity_examen_clinico.xml" value="0.5" />
-        <entry key="..\:/Users/hp/AndroidStudioProjects/appcentrosalud3/app/src/main/res/layout/activity_main.xml" value="0.1859375" />
-        <entry key="..\:/Users/hp/AndroidStudioProjects/appcentrosalud3/app/src/main/res/layout/activity_prueba_sensibilidad.xml" value="0.67" />
-        <entry key="..\:/Users/hp/AndroidStudioProjects/appcentrosalud3/app/src/main/res/layout/activity_reacciones_adversas_medicamentos.xml" value="0.5" />
-        <entry key="..\:/Users/hp/AndroidStudioProjects/appcentrosalud3/app/src/main/res/layout/activity_registrar_control.xml" value="0.2" />
-        <entry key="..\:/Users/hp/AndroidStudioProjects/appcentrosalud3/app/src/main/res/layout/activity_registrar_paciente.xml" value="0.1" />
+        <entry key="..\:/appcentrosalud/app/src/main/res/layout/activity_condicion_actual.xml" value="0.3052536231884058" />
+        <entry key="..\:/appcentrosalud/app/src/main/res/layout/activity_esquema_actual.xml" value="0.3052536231884058" />
+        <entry key="..\:/appcentrosalud/app/src/main/res/layout/activity_examen_clinico.xml" value="0.3052536231884058" />
         <entry key="..\:/appcentrosalud/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/appcentrosalud/app/src/main/res/layout/activity_panel.xml" value="0.28229166666666666" />
         <entry key="..\:/appcentrosalud/app/src/main/res/layout/activity_panel2.xml" value="0.36666666666666664" />
+        <entry key="..\:/appcentrosalud/app/src/main/res/layout/activity_prueba_sensibilidad.xml" value="0.3591485507246377" />
+        <entry key="..\:/appcentrosalud/app/src/main/res/layout/activity_reacciones_adversas_medicamentos.xml" value="0.3052536231884058" />
         <entry key="..\:/appcentrosalud/app/src/main/res/layout/activity_registrar_control.xml" value="0.17831813576494426" />
         <entry key="..\:/appcentrosalud/app/src/main/res/layout/activity_registrar_paciente.xml" value="0.17831813576494426" />
+        <entry key="..\:/appcentrosalud/app/src/main/res/layout/activity_tratamiento_tuberculosis_anterior.xml" value="0.17831813576494426" />
       </map>
     </option>
   </component>

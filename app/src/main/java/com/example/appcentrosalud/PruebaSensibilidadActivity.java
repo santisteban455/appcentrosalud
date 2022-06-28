@@ -26,12 +26,7 @@ public class PruebaSensibilidadActivity extends AppCompatActivity {
     String codigo, laboratorio, medicamentos, fecha;
 
     FirebaseAuth auth;
-
-
     DatabaseReference bdcentrosalud;
-
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -83,7 +78,12 @@ public class PruebaSensibilidadActivity extends AppCompatActivity {
             public void onComplete(@NonNull Task<Void> task2) {
 
                 if(task2.isSuccessful()){
-                    startActivity(new Intent(PruebaSensibilidadActivity.this,PanelActivity.class));
+
+                    Bundle extras = new Bundle();
+                    extras.putString("id", valor);
+                    Intent i = new Intent(PruebaSensibilidadActivity.this, CondicionActualActivity.class);
+                    i.putExtras(extras);
+                    startActivity(i);
                     finish();
                 }else{
                     Toast.makeText(PruebaSensibilidadActivity.this, "No se guardaron los datos del sensibilidad del paciente en la base de datos", Toast.LENGTH_SHORT).show();

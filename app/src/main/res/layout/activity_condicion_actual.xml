@@ -33,14 +33,14 @@
             android:textStyle="bold"
             android:layout_margin="10dp"
             android:textSize="18dp"
-            android:text="LABORATORIO:" />
+            android:text="FIEBRE:" />
 
         <EditText
-            android:id="@+id/txtLaboratorio"
+            android:id="@+id/txtFiebre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:hint="INGRESAR LAB."
+            android:hint="INGRESAR SI/NO"
             android:ems="10"
             />
 
@@ -62,15 +62,15 @@
             android:textStyle="bold"
             android:gravity="center"
             android:layout_height="wrap_content"
-            android:text="CÓDIGO:" />
+            android:text="PERD. PESO:" />
 
         <EditText
-            android:id="@+id/txtCodigo"
+            android:id="@+id/txtPerdidaPeso"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:ems="10"
-            android:hint="INGRESAR CÓDIGO"
+            android:hint="INGRESAR PERD. PESO"
             />
 
 
@@ -91,21 +91,46 @@
             android:textStyle="bold"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="FECHA:" />
+            android:text="PESO:" />
 
         <EditText
-            android:id="@+id/txtFecha"
+            android:id="@+id/txtPeso"
             android:layout_width="wrap_content"
             android:layout_margin="5dp"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="INGRESAR FECHA"
+            android:hint="INGRESAR PESO"
             />
 
 
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="308dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="DIFICULTAD RESPIRATORIA:"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtDificultadRes"
+            android:layout_width="253dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:ems="10"
+            android:hint="INGRESAR DIFICULTAD RESPIRATORIA" />
+
+
+    </LinearLayout>
 
 
 
@@ -124,10 +149,10 @@
             android:layout_gravity="center"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="MEDICAMENTOS" />
+            android:text="OTROS" />
 
         <EditText
-            android:id="@+id/txtMedicamentos"
+            android:id="@+id/txtOtros"
             android:layout_width="289dp"
             android:layout_height="129dp"
             android:layout_margin="10dp"

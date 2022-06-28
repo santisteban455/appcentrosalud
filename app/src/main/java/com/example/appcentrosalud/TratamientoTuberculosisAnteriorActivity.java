@@ -85,7 +85,6 @@ public class TratamientoTuberculosisAnteriorActivity extends AppCompatActivity {
             public void onComplete(@NonNull Task<Void> task2) {
 
                 if(task2.isSuccessful()){
-                    startActivity(new Intent(TratamientoTuberculosisAnteriorActivity.this,PruebaSensibilidadActivity.class));
                     Bundle extras = new Bundle();
                     extras.putString("id", valor);
                     Intent i = new Intent(TratamientoTuberculosisAnteriorActivity.this, PruebaSensibilidadActivity.class);
