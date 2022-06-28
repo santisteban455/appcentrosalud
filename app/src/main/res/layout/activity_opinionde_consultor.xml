@@ -278,6 +278,11 @@
 
             />
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
     <Button
         android:id="@+id/btnRegistrar"
         android:layout_width="wrap_content"
@@ -295,7 +300,7 @@
         android:layout_marginTop="5dp"
         android:layout_height="wrap_content"
         android:text="CANCELAR" />
-
+    </LinearLayout>
 </LinearLayout>
 
 

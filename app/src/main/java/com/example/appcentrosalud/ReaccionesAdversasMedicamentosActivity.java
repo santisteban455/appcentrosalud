@@ -91,7 +91,7 @@ public class ReaccionesAdversasMedicamentosActivity extends AppCompatActivity {
 
                     Bundle extras = new Bundle();
                     extras.putString("id", valor);
-                    Intent i = new Intent(ReaccionesAdversasMedicamentosActivity.this, PanelActivity.class);
+                    Intent i = new Intent(ReaccionesAdversasMedicamentosActivity.this, OpiniondeConsultorActivity.class);
                     i.putExtras(extras);
                     startActivity(i);
                     finish();
